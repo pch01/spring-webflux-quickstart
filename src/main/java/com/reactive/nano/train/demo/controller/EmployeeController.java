@@ -50,7 +50,7 @@ public class EmployeeController {
   }
 
   /**
-   * This method
+   * This method finds all
    * @return
    */
   @RequestMapping(path = "/all/json", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
