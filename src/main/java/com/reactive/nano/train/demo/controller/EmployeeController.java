@@ -49,6 +49,10 @@ public class EmployeeController {
     return employeeService.findAll();
   }
 
+  /**
+   * This method
+   * @return
+   */
   @RequestMapping(path = "/all/json", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
   public Flux<Employee> findAllReturnJson() {
     return employeeService.findAll().distinct().onErrorResume(Mono::error);
